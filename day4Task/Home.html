@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="Home.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <button id="sideToggle" class="hamburger" onclick="toggleMenu('sidenav', 'sideToggle')">☰</button>
+      <div class="logo">
+        <img src="../assets/apple-icon-60x60.png" alt="logo">
+      </div>
+      <button id="toggle" class="hamburger" onclick="toggleMenu('navLinks', 'toggle')">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="sidenav" id="sidenav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#profile">Profile</a></li>
+
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="card">
+        <img src="../assets/p1.jpg" alt="p1" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p2.jpg" alt="p2" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p3.jpg" alt="p3" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p4.jpg" alt="p4" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p5.jpg" alt="p5" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p6.jpg" alt="p6" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p1.jpg" alt="p1" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p2.jpg" alt="p2" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p3.jpg" alt="p3" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p4.jpg" alt="p4" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p5.jpg" alt="p5" class="image">
+        <button class="btn">Read</button>
+      </div>
+      <div class="card">
+        <img src="../assets/p6.jpg" alt="p6" class="image">
+        <button class="btn">Read</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu(menuId, btnId) {
+      const menu = document.getElementById(menuId);
+      const btn = document.getElementById(btnId);
+
+      menu.classList.toggle('show');
+
+      btn.textContent = menu.classList.contains('show') ? 'X' : '☰';
+    }
+
+  </script>
+
+</body>
+</html>
